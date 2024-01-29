@@ -6,7 +6,7 @@ emailer = Emailer()
 
 sendTo = sdh.getRecipient1()
 emailSubject = "meow...meow"
-emailContent = "This is a test of my Emailer Class"
+emailContent = "Minki is the best cat in the world!"
 
 #Sends an email to the "sendTo" address with the specified "emailSubject" as the subject and "emailContent" as the email content.
 
