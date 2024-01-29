@@ -32,12 +32,12 @@ class Emailer:
         session.sendmail(GMAIL_USERNAME, recipient, headers + "\r\n\r\n" + content)
         session.quit
 
-sender = Emailer()
+# sender = Emailer()
 
-sendTo = os.getenv('SEND_TO')
-emailSubject = "Hello World"
-emailContent = "This is a test of my Emailer Class"
+# sendTo = os.getenv('SEND_TO')
+# emailSubject = "Hello World"
+# emailContent = "This is a test of my Emailer Class"
 
-#Sends an email to the "sendTo" address with the specified "emailSubject" as the subject and "emailContent" as the email content.
-sender.sendmail(sendTo, emailSubject, emailContent)
-print("email sent")
+# #Sends an email to the "sendTo" address with the specified "emailSubject" as the subject and "emailContent" as the email content.
+# sender.sendmail(sendTo, emailSubject, emailContent)
+# print("email sent")
