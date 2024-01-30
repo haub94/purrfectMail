@@ -4,7 +4,7 @@ I started the project with the idea of taking a picture every day with a Raspber
 
 ## Project state
 🏗️ work in progress 🏗️ <br>
-It is currently possible to store some pictures in the catGallery folder. One of these is selected at random and sent. If the folder is empty, Minka is sent.
+It is currently possible to store some pictures in the catGallery folder. One of these is selected at random and sent. If the folder is empty, Minka is sent. <br>
 **Next Steps**
 - buy camera for raspy
 - implement camera- and sensor usage to trigger the mailing
