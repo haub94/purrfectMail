@@ -1,16 +1,16 @@
 import smtplib
-from SensibleDataHandler import SensibleDataHandler
+from DotEnvHandler import DotEnvHandler
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
-sdh = SensibleDataHandler()
+deh = DotEnvHandler()
 
 #Email Variables
 SMTP_SERVER = 'smtp.gmail.com' #Email Server (don't change!)
 SMTP_PORT = 587 #Server Port (don't change!)
-GMAIL_USERNAME = sdh.getSenderName()
-GMAIL_PASSWORD = sdh.getSenderAppPassword()
+GMAIL_USERNAME = deh.getSenderName()
+GMAIL_PASSWORD = deh.getSenderAppPassword()
 
 class Emailer:
     def sendmail(self, recipient, subject, content, image):

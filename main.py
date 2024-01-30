@@ -2,13 +2,13 @@
 
 import os
 import random
-from SensibleDataHandler import SensibleDataHandler
+from DotEnvHandler import DotEnvHandler
 from Emailer import Emailer
 
 PATH_TO_IMAGE_GALLERY = 'catGallery/' #add here the images from your cat
 CAT_NAME = 'Minki' #use the name of your cat
 
-sdh = SensibleDataHandler()
+deh = DotEnvHandler()
 emailer = Emailer()
 
 image = ''
@@ -26,7 +26,7 @@ except:
     print("It seems that your catGallery-folder is empty! By default Minka will sent")
     image = "minka.jpeg" #use default
 
-recipient = sdh.getRecipient1()
+recipient = deh.getRecipient1()
 
 emailSubject = "meow..."
 emailContent = f"{CAT_NAME} of the day."

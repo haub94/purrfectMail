@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class SensibleDataHandler:
+class DotEnvHandler:
     def __init__(self):
         self.GMAIL_USERNAME = os.getenv('GMAIL_USERNAME')
         self.GMAIL_APP_PASSWORD = os.getenv('GMAIL_APP_PASSWORD')
