@@ -9,7 +9,7 @@ It is currently possible to store some pictures in the catGallery folder. One of
 - buy camera for raspy
 - implement camera- and sensor usage to trigger the mailing
 
-## How to send mails
+## How to use
 1) use the [.env_sample](.env_sample) to store your gmail-credentials and the mail-adress from the recipient. (How to setup the gmail account?! Use this [tutorial](https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)!)
 2) store some images from your cat (or what ever you want to send) in the [catGallery](/catGallery)
 3) change CAT_NAME in the main.py
