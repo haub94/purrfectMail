@@ -5,7 +5,9 @@ import random
 from DotEnvHandler import DotEnvHandler
 from Emailer import Emailer
 
-PATH_TO_IMAGE_GALLERY = 'catGallery/' #add here the images from your cat
+PATH_TO_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+PATH_TO_IMAGE_GALLERY = PATH_TO_ROOT + '/catGallery/' #add here the images from your cat
 CAT_NAME = 'Minki' #use the name of your cat
 
 deh = DotEnvHandler()
@@ -24,7 +26,8 @@ try:
 
 except:
     print("It seems that your catGallery-folder is empty! By default Minka will sent")
-    image = "minka.jpeg" #use default
+    #image = "/home/admin/purrfectMail/minka.jpeg" #use default
+    image = PATH_TO_ROOT + "/minka.jpeg"
 
 recipient = deh.getRecipient1()
 
@@ -33,3 +36,4 @@ emailContent = f"{CAT_NAME} of the day."
 
 #send the mail 
 emailer.sendmail(recipient, emailSubject, emailContent, image)
+
