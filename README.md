@@ -11,9 +11,11 @@ It is currently possible to store some pictures in the catGallery folder. One of
 
 ## How to use
 1) use the [.env_sample](.env_sample) to store your gmail-credentials and the mail-adress from the recipient. (How to setup the gmail account?! Use this [tutorial](https://bc-robotics.com/tutorials/sending-email-using-python-raspberry-pi/)!)
-2) store some images from your cat (or what ever you want to send) in the [catGallery](/catGallery)
-3) change CAT_NAME in the main.py
-3) run the main.py
+2) install dotenv: pip install python-dotenv
+3) store some images from your cat (or what ever you want to send) in the 
+[catGallery](/catGallery)
+4) change CAT_NAME in the main.py
+5) run the main.py
 
 ## Default cat
 By default the mail will contain the [picture from minka](minka.jpeg). She always wanted to surf the web... <br>
