@@ -8,6 +8,7 @@ from Emailer import Emailer
 PATH_TO_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 PATH_TO_IMAGE_GALLERY = PATH_TO_ROOT + '/catGallery/' #add here the images from your cat
+
 CAT_NAME = 'Minki' #use the name of your cat
 
 deh = DotEnvHandler()
