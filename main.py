@@ -30,11 +30,12 @@ except:
     #image = "/home/admin/purrfectMail/minka.jpeg" #use default
     image = PATH_TO_ROOT + "/minka.jpeg"
 
-recipient = deh.getRecipient1()
+#recipient = deh.getRecipient1()
+recipients = [deh.getRecipient1(), deh.getRecipient2]
 
 emailSubject = "meow..."
 emailContent = f"{CAT_NAME} of the day."
 
 #send the mail 
-emailer.sendmail(recipient, emailSubject, emailContent, image)
+emailer.sendmail(recipients, emailSubject, emailContent, image)
 

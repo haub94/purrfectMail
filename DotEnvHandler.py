@@ -16,4 +16,8 @@ class DotEnvHandler:
         return self.GMAIL_APP_PASSWORD
     
     def getRecipient1(self):
-        return self.RECIPIENT1
+        return self.RECIPIENT1 
+    
+    def getRecipient2(self):
+        return self.RECIPIENT2
+    
